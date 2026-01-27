@@ -2,7 +2,7 @@
     "Name": "EEGEyeNet Dataset",
     "BIDSVersion": "1.7.0",
     "DatasetType": "raw",
-    "License": "Please see the file named license.txt at https://osf.io/ktv7m/",
+    "License": "CC0",
     "Authors": [
         "Martyna Beata Płomecka",
         "Ard Kastrati",
@@ -33,7 +33,7 @@
         "& Langer",
         "N. (2021). EEGEyeNet: A Simultaneous Electroencephalography and Eye-tracking Dataset and Benchmark for Eye Movement Prediction (Version 2). arXiv. https://doi.org/10.48550/ARXIV.2111.05100"
     ],
-    "DatasetDOI": "10.17605/OSF.IO/KTV7M",
+    "DatasetDOI": "doi:10.18112/openneuro.ds007338.v1.0.0",
     "GeneratedBy": [
         {
             "Name": "https://github.com/scott-huberty/example-bids-dataset-eegeyenet.git"
