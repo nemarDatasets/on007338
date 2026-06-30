@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "EEGEyeNet Dataset",
-  "description": "EEGEyeNet is a simultaneous electroencephalography and eye-tracking dataset designed for eye movement prediction research. This BIDS-standardized version contains data from one subject collected during a controlled experimental paradigm, extracted from the larger EEGEyeNet dataset. The dataset serves as a benchmark for developing and validating computational models of oculomotor behavior using multimodal neurophysiological recordings.",
-  "methods_description": "Data were collected simultaneously using electroencephalography (EEG) and eye-tracking technology. The study received ethical approval from the Institutional Review Board of Canton Zurich (BASEC-Nr. 2017-00226).",
+  "description": "EEGEyeNet is a simultaneous electroencephalography and eye-tracking dataset designed for eye movement prediction research. This BIDS-standardized dataset contains raw EEG and eye-tracking recordings collected from human subjects during controlled experimental tasks. The dataset serves as a benchmark for developing and evaluating computational models of eye movement behavior using multimodal neuroimaging data.",
+  "methods_description": "Data were collected simultaneously using electroencephalography (EEG) and eye-tracking equipment. The study received ethical approval from the Institutional Review Board of Canton Zurich (BASEC-Nr. 2017-00226).",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -18,18 +18,16 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
     },
     {
-      "term": "eye tracking",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D005133"
+      "term": "eye tracking"
     },
     {
-      "term": "eye movement prediction"
+      "term": "eye movements"
+    },
+    {
+      "term": "neural signal processing"
     },
     {
       "term": "multimodal neuroimaging"
-    },
-    {
-      "term": "oculomotor control"
     },
     {
       "term": "BIDS"
