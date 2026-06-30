@@ -1,7 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "EEGEyeNet Dataset",
+  "description": "EEGEyeNet is a simultaneous electroencephalography and eye-tracking dataset designed for eye movement prediction research. This BIDS-standardized version contains data from one subject collected during a controlled experimental paradigm, extracted from the larger EEGEyeNet dataset. The dataset serves as a benchmark for developing and validating computational models of oculomotor behavior using multimodal neurophysiological recordings.",
+  "methods_description": "Data were collected simultaneously using electroencephalography (EEG) and eye-tracking technology. The study received ethical approval from the Institutional Review Board of Canton Zurich (BASEC-Nr. 2017-00226).",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -9,12 +11,31 @@
     "Ard Kastrati": {},
     "Nicolas Langer": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds007338.v1.0.0",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
     },
+    {
+      "term": "eye tracking",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D005133"
+    },
+    {
+      "term": "eye movement prediction"
+    },
+    {
+      "term": "multimodal neuroimaging"
+    },
+    {
+      "term": "oculomotor control"
+    },
+    {
+      "term": "BIDS"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "10.17605/OSF.IO/KTV7M",
       "identifier_type": "DOI",
@@ -44,6 +65,11 @@
       "identifier": "10.1038/s41597-019-0104-8",
       "identifier_type": "DOI",
       "relation_type": "References"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds007338.v1.0.0",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
@@ -57,48 +83,19 @@
     }
   ],
   "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "47.1 MB (3 files)"
   ],
   "formats": [
     ".edf",
     ".json",
     ".md",
-    ".tsv"
+    ".tsv",
+    ".yml"
   ],
-  "description": "EEGEyeNet is a simultaneous electroencephalography and eye-tracking dataset designed for eye movement prediction research. This BIDS-standardized dataset contains raw EEG and eye-tracking data collected during a controlled experimental paradigm where subjects performed tasks while their neural activity and eye movements were simultaneously recorded. The data serves as a benchmark for developing and evaluating machine learning models that predict eye movements from neural activity.",
-  "methods_description": "Data were collected simultaneously using electroencephalography (EEG) and eye-tracking equipment during controlled experimental sessions. EEG was recorded using a standard clinical setup with multiple channels sampled at high temporal resolution. Eye-tracking data captured gaze position and pupil information synchronized with EEG recordings. The study received ethical approval from the Institutional Review Board of Canton Zurich (BASEC-Nr. 2017-00226). This dataset represents a BIDS-standardized subset from the larger EEGEyeNet benchmark study, with raw data preprocessed and organized according to BIDS conventions.",
-  "keywords": [
-    {
-      "term": "Electroencephalography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
-    },
-    {
-      "term": "Eye Movements",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D005133"
-    },
-    {
-      "term": "Neuroimaging",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D059906"
-    },
-    {
-      "term": "Brain-Computer Interfaces",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D001931"
-    },
-    {
-      "term": "BIDS"
-    },
-    {
-      "term": "multimodal"
-    }
-  ],
-  "source_hash": "e2a37a6686f79633870d9f0e71009030a12e199b5823ec010bb4ac0f24208d74"
+  "source_hash": "096a5f5f450214ceb9219b980f047779c3f3f4728432bda3b9bb8eb775a9b805"
 }
