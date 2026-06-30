@@ -1,38 +1,104 @@
 {
   "version": "2.0",
-  "dataset_id": "on007338",
-  "source": "openneuro",
-  "source_id": "ds007338",
+  "pipeline_stage": "enriched",
   "title": "EEGEyeNet Dataset",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Martyna Beata Płomecka": {},
     "Ard Kastrati": {},
     "Nicolas Langer": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds007338.v1.0.0",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "10.17605/OSF.IO/KTV7M",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "10.48550/ARXIV.2111.05100",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on007338",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on007338",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.21105/joss.01896",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.1038/s41597-019-0104-8",
+      "identifier_type": "DOI",
+      "relation_type": "References"
     }
-  ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.7.0",
-  "recording_modality": [
-    "eeg"
-  ],
-  "datatypes": [
-    "eeg"
   ],
   "funding_references": [
     {
-      "funder_name": "Velux Stiftung Project No. 1126"
+      "funder_name": "Velux Stiftung",
+      "award_number": "1126"
     },
     {
-      "funder_name": "Schweizerischer Nationalfonds zur Förderungder Wissenschaftlichen Forschung (SNF) Grant 100014175875"
+      "funder_name": "Schweizerischer Nationalfonds zur Förderung der Wissenschaftlichen Forschung",
+      "award_number": "100014175875"
     }
   ],
-  "acknowledgements": "We thank the authors of the original EEGEyeNet paper for Making this dataset available."
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".edf",
+    ".json",
+    ".md",
+    ".tsv"
+  ],
+  "description": "EEGEyeNet is a simultaneous electroencephalography and eye-tracking dataset designed for eye movement prediction research. This BIDS-standardized dataset contains raw EEG and eye-tracking data collected during a controlled experimental paradigm where subjects performed tasks while their neural activity and eye movements were simultaneously recorded. The data serves as a benchmark for developing and evaluating machine learning models that predict eye movements from neural activity.",
+  "methods_description": "Data were collected simultaneously using electroencephalography (EEG) and eye-tracking equipment during controlled experimental sessions. EEG was recorded using a standard clinical setup with multiple channels sampled at high temporal resolution. Eye-tracking data captured gaze position and pupil information synchronized with EEG recordings. The study received ethical approval from the Institutional Review Board of Canton Zurich (BASEC-Nr. 2017-00226). This dataset represents a BIDS-standardized subset from the larger EEGEyeNet benchmark study, with raw data preprocessed and organized according to BIDS conventions.",
+  "keywords": [
+    {
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+    },
+    {
+      "term": "Eye Movements",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D005133"
+    },
+    {
+      "term": "Neuroimaging",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D059906"
+    },
+    {
+      "term": "Brain-Computer Interfaces",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D001931"
+    },
+    {
+      "term": "BIDS"
+    },
+    {
+      "term": "multimodal"
+    }
+  ],
+  "source_hash": "e2a37a6686f79633870d9f0e71009030a12e199b5823ec010bb4ac0f24208d74"
 }
