@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "EEGEyeNet Dataset",
-  "description": "EEGEyeNet is a simultaneous electroencephalography and eye-tracking dataset designed for eye movement prediction research. This BIDS-standardized dataset contains raw EEG and eye-tracking recordings collected from human subjects during controlled experimental tasks. The dataset serves as a benchmark for developing and evaluating computational models of eye movement behavior using multimodal neuroimaging data.",
-  "methods_description": "Data were collected simultaneously using electroencephalography (EEG) and eye-tracking equipment. The study received ethical approval from the Institutional Review Board of Canton Zurich (BASEC-Nr. 2017-00226).",
+  "description": "This dataset is a BIDS-standardized version of simultaneously collected EEG and eye-tracking data from one subject, derived from the larger EEGEyeNet dataset. It provides a resource for studying the relationship between neural activity and eye movements, supporting benchmarking of eye movement prediction models. The data were originally collected as part of a study approved by the Institutional Review Board of Canton Zurich.",
+  "methods_description": "Simultaneous EEG and eye-tracking data were recorded from a subject as part of the original EEGEyeNet study, and later converted into BIDS format.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -13,24 +13,26 @@
   },
   "keywords": [
     {
+      "term": "EEG"
+    },
+    {
+      "term": "Eye Movements",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D005133"
+    },
+    {
+      "term": "eye-tracking"
+    },
+    {
       "term": "Electroencephalography",
       "subject_scheme": "MeSH",
       "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
     },
     {
-      "term": "eye tracking"
-    },
-    {
-      "term": "eye movements"
-    },
-    {
-      "term": "neural signal processing"
-    },
-    {
-      "term": "multimodal neuroimaging"
-    },
-    {
       "term": "BIDS"
+    },
+    {
+      "term": "benchmark dataset"
     }
   ],
   "related_identifiers": [
@@ -42,7 +44,7 @@
     {
       "identifier": "10.48550/ARXIV.2111.05100",
       "identifier_type": "DOI",
-      "relation_type": "References"
+      "relation_type": "IsSupplementTo"
     },
     {
       "identifier": "https://github.com/nemarDatasets/on007338",
@@ -76,7 +78,7 @@
       "award_number": "1126"
     },
     {
-      "funder_name": "Schweizerischer Nationalfonds zur Förderung der Wissenschaftlichen Forschung",
+      "funder_name": "Schweizerischer Nationalfonds zur Förderung der Wissenschaftlichen Forschung (SNF)",
       "award_number": "100014175875"
     }
   ],
